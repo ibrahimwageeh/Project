@@ -1,0 +1,10 @@
+{% for result in results %}
+    <div class="result">
+        <h2>{{ result['name'] }}</h2>
+        <p>{{ result['formatted_address'] }}</p>
+        <img src="{{ result['icon'] }}">
+        <div class="rating">
+            <span>{{ result['rating'] }}</span>
+        </div>
+    </div>
+{% endfor %}
